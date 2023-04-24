@@ -1,0 +1,90 @@
+body {
+    background-color: #FA8072;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: #8144f1;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+.Game-Board {
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+}
+
+.tile {
+    display: flex;
+    border: 3px solid #ABD7EB;
+    min-width: 50px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.tile:hover {
+    background-color: #90cfec;
+    border-radius: 15%;
+}
+
+.selected-tile {
+    display: flex;
+    border: 3px solid #ABD7EB;
+    min-width: 50px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(72, 155, 233);
+    border-radius: 15%;
+}
+
+.winner-tile {
+    display: flex;
+    border: 3px solid #ABD7EB;
+    min-width: 50px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    background-color: #3EB489;
+    border-radius: 15%;
+}
+
+.utility-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    position:relative;
+    width: 100px;
+    height: 38px;
+    cursor:pointer;
+    border: none;
+    color: #d6e2e7;
+    background-color: rgb(99, 162, 224);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #e9ac2a;
+    transition: ease-out 0.3s;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+button:hover {
+    bottom: 5px;
+    box-shadow: inset 100px 0 0 0 #e9ac2a;
+}
